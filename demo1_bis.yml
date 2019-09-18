@@ -1,0 +1,265 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /home/user
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 105
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 27
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: -1
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 414
+    content: "\e]0;user@G2G: ~\a\e[01;32muser@G2G\e[00m:\e[01;34m~\e[00m$ "
+  - delay: 1667
+    content: s
+  - delay: 136
+    content: u
+  - delay: 57
+    content: d
+  - delay: 147
+    content: o
+  - delay: 113
+    content: ' '
+  - delay: 139
+    content: z
+  - delay: 71
+    content: p
+  - delay: 81
+    content: o
+  - delay: 119
+    content: o
+  - delay: 199
+    content: l
+  - delay: 91
+    content: ' '
+  - delay: 191
+    content: c
+  - delay: 186
+    content: r
+  - delay: 72
+    content: e
+  - delay: 165
+    content: a
+  - delay: 153
+    content: t
+  - delay: 82
+    content: e
+  - delay: 146
+    content: ' '
+  - delay: 823
+    content: '-'
+  - delay: 63
+    content: f
+  - delay: 138
+    content: ' '
+  - delay: 107
+    content: t
+  - delay: 356
+    content: a
+  - delay: 125
+    content: 'n'
+  - delay: 65
+    content: k
+  - delay: 557
+    content: '1'
+  - delay: 203
+    content: ' '
+  - delay: 819
+    content: m
+  - delay: 202
+    content: i
+  - delay: 92
+    content: r
+  - delay: 155
+    content: r
+  - delay: 110
+    content: o
+  - delay: 50
+    content: r
+  - delay: 92
+    content: ' '
+  - delay: 1016
+    content: s
+  - delay: 179
+    content: d
+  - delay: 100
+    content: b
+  - delay: 108
+    content: ' '
+  - delay: 193
+    content: s
+  - delay: 176
+    content: d
+  - delay: 233
+    content: c
+  - delay: 363
+    content: "\r\n"
+  - delay: 384
+    content: "\e]0;user@G2G: ~\a\e[01;32muser@G2G\e[00m:\e[01;34m~\e[00m$ "
+  - delay: 712
+    content: s
+  - delay: 157
+    content: u
+  - delay: 103
+    content: d
+  - delay: 102
+    content: o
+  - delay: 94
+    content: ' '
+  - delay: 181
+    content: p
+  - delay: 57
+    content: z
+  - delay: 243
+    content: "\b\e[K"
+  - delay: 150
+    content: "\b\e[K"
+  - delay: 92
+    content: z
+  - delay: 115
+    content: p
+  - delay: 91
+    content: o
+  - delay: 149
+    content: o
+  - delay: 175
+    content: l
+  - delay: 64
+    content: ' '
+  - delay: 137
+    content: s
+  - delay: 141
+    content: t
+  - delay: 117
+    content: a
+  - delay: 71
+    content: t
+  - delay: 79
+    content: u
+  - delay: 137
+    content: s
+  - delay: 115
+    content: "\r\n"
+  - delay: 14
+    content: "  pool: tank1\r\n state: ONLINE\r\n  scan: none requested\r\nconfig:\r\n\r\n\tNAME        STATE     READ WRITE CKSUM\r\n\ttank1       ONLINE       0     0     0\r\n\t  mirror-0  ONLINE       0     0     0\r\n\t    sdb     ONLINE       0     0     0\r\n\t    sdc     ONLINE       0     0     0\r\n\r\nerrors: No known data errors\r\n\e]0;user@G2G: ~\a\e[01;32muser@G2G\e[00m:\e[01;34m~\e[00m$ "
+  - delay: 1393
+    content: l
+  - delay: 141
+    content: l
+  - delay: 83
+    content: ' '
+  - delay: 181
+    content: /
+  - delay: 160
+    content: t
+  - delay: 94
+    content: a
+  - delay: 176
+    content: nk1/
+  - delay: 142
+    content: "\r\ntotal 5\r\ndrwxr-xr-x  2 root root    2 Sep 15 21:13 \e[0m\e[01;34m.\e[0m\r\ndrwxr-xr-x 23 root root 4096 Sep 15 21:13 \e[01;34m..\e[0m\r\n\e]0;user@G2G: ~\a\e[01;32muser@G2G\e[00m:\e[01;34m~\e[00m$ "
+  - delay: 1247
+    content: "logout\r\n"
