@@ -1,0 +1,495 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /home/user
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 105
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 27
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: -1
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 20000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Snapshots
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 421
+    content: "\e]0;user@G2G: ~\a\e[01;32muser@G2G\e[00m:\e[01;34m~\e[00m$ "
+  - delay: 507
+    content: c
+  - delay: 109
+    content: d
+  - delay: 102
+    content: ' '
+  - delay: 618
+    content: ' '
+  - delay: 473
+    content: "\b\e[K"
+  - delay: 261
+    content: /
+  - delay: 209
+    content: t
+  - delay: 89
+    content: a
+  - delay: 156
+    content: nk2/
+  - delay: 465
+    content: "\r\n\e]0;user@G2G: /tank2\a\e[01;32muser@G2G\e[00m:\e[01;34m/tank2\e[00m$ "
+  - delay: 606
+    content: l
+  - delay: 159
+    content: l
+  - delay: 224
+    content: "\r\ntotal 204738\r\ndrwxr-xr-x  2 root root         5 Sep 17 21:52 \e[0m\e[01;34m.\e[0m\r\ndrwxr-xr-x 23 root root      4096 Sep 17 21:36 \e[01;34m..\e[0m\r\n-rw-r--r--  1 root root 104857600 Sep 17 21:25 \e[01;31m100MB2.zip\e[0m\r\n-rw-r--r--  1 root root 104857600 Sep 15 22:31 \e[01;31m100MB.zip\e[0m\r\n-rw-r--r--  1 root root        12 Sep 17 21:52 hello\r\n\e]0;user@G2G: /tank2\a\e[01;32muser@G2G\e[00m:\e[01;34m/tank2\e[00m$ "
+  - delay: 2023
+    content: s
+  - delay: 215
+    content: u
+  - delay: 478
+    content: d
+  - delay: 150
+    content: o
+  - delay: 59
+    content: ' '
+  - delay: 206
+    content: z
+  - delay: 364
+    content: f
+  - delay: 86
+    content: s
+  - delay: 81
+    content: ' '
+  - delay: 437
+    content: l
+  - delay: 75
+    content: i
+  - delay: 56
+    content: s
+  - delay: 193
+    content: t
+  - delay: 303
+    content: "\r\n"
+  - delay: 13
+    content: "NAME    USED  AVAIL  REFER  MOUNTPOINT\r\ntank2   200M  19.0G   200M  /tank2\r\n\e]0;user@G2G: /tank2\a\e[01;32muser@G2G\e[00m:\e[01;34m/tank2\e[00m$ "
+  - delay: 2058
+    content: sudo zfs list
+  - delay: 613
+    content: "\b\b\b\b\e[K"
+  - delay: 1247
+    content: s
+  - delay: 158
+    content: 'n'
+  - delay: 138
+    content: a
+  - delay: 184
+    content: p
+  - delay: 578
+    content: s
+  - delay: 156
+    content: h
+  - delay: 118
+    content: o
+  - delay: 483
+    content: t
+  - delay: 208
+    content: ' '
+  - delay: 456
+    content: t
+  - delay: 166
+    content: a
+  - delay: 146
+    content: 'n'
+  - delay: 195
+    content: 'k2@ '
+  - delay: 350
+    content: "\b\e[K"
+  - delay: 1172
+    content: $
+  - delay: 662
+    content: (
+  - delay: 52
+    content: )
+  - delay: 363
+    content: "\b"
+  - delay: 131
+    content: "d)\b"
+  - delay: 93
+    content: "a)\b"
+  - delay: 182
+    content: "t)\b"
+  - delay: 64
+    content: "e)\b"
+  - delay: 131
+    content: " )\b"
+  - delay: 314
+    content: "-)\b"
+  - delay: 375
+    content: "I)\b"
+  - delay: 1062
+    content: "\r\n"
+  - delay: 92
+    content: "\e]0;user@G2G: /tank2\a\e[01;32muser@G2G\e[00m:\e[01;34m/tank2\e[00m$ "
+  - delay: 690
+    content: s
+  - delay: 114
+    content: u
+  - delay: 95
+    content: d
+  - delay: 136
+    content: o
+  - delay: 68
+    content: ' '
+  - delay: 362
+    content: z
+  - delay: 212
+    content: f
+  - delay: 86
+    content: s
+  - delay: 83
+    content: ' '
+  - delay: 331
+    content: l
+  - delay: 119
+    content: i
+  - delay: 43
+    content: s
+  - delay: 540
+    content: t
+  - delay: 75
+    content: ' '
+  - delay: 234
+    content: '-'
+  - delay: 224
+    content: t
+  - delay: 110
+    content: ' '
+  - delay: 272
+    content: a
+  - delay: 145
+    content: l
+  - delay: 146
+    content: l
+  - delay: 584
+    content: "\r\n"
+  - delay: 14
+    content: "NAME               USED  AVAIL  REFER  MOUNTPOINT\r\ntank2              202M  19.0G   200M  /tank2\r\ntank2@2019-09-17     0B      -   200M  -\r\n\e]0;user@G2G: /tank2\a\e[01;32muser@G2G\e[00m:\e[01;34m/tank2\e[00m$ "
+  - delay: 3004
+    content: l
+  - delay: 160
+    content: l
+  - delay: 375
+    content: "\r\ntotal 204738\r\ndrwxr-xr-x  2 root root         5 Sep 17 21:52 \e[0m\e[01;34m.\e[0m\r\ndrwxr-xr-x 23 root root      4096 Sep 17 21:36 \e[01;34m..\e[0m\r\n-rw-r--r--  1 root root 104857600 Sep 17 21:25 \e[01;31m100MB2.zip\e[0m\r\n-rw-r--r--  1 root root 104857600 Sep 15 22:31 \e[01;31m100MB.zip\e[0m\r\n-rw-r--r--  1 root root        12 Sep 17 21:52 hello\r\n\e]0;user@G2G: /tank2\a\e[01;32muser@G2G\e[00m:\e[01;34m/tank2\e[00m$ "
+  - delay: 1491
+    content: c
+  - delay: 85
+    content: d
+  - delay: 72
+    content: ' '
+  - delay: 279
+    content: .
+  - delay: 149
+    content: z
+  - delay: 176
+    content: f
+  - delay: 110
+    content: s
+  - delay: 311
+    content: /
+  - delay: 266
+    content: z
+  - delay: 367
+    content: "\b\e[K"
+  - delay: 127
+    content: s
+  - delay: 164
+    content: 'n'
+  - delay: 88
+    content: a
+  - delay: 186
+    content: pshot/
+  - delay: 892
+    content: "\r\n\e]0;user@G2G: /tank2/.zfs/snapshot\a\e[01;32muser@G2G\e[00m:\e[01;34m/tank2/.zfs/snapshot\e[00m$ "
+  - delay: 566
+    content: l
+  - delay: 196
+    content: l
+  - delay: 198
+    content: "\r\ntotal 0\r\ndrwxrwxrwx 2 root root 2 Sep 17 21:57 \e[0m\e[34;42m.\e[0m\r\ndrwxrwxrwx 1 root root 0 Sep 17 21:36 \e[34;42m..\e[0m\r\ndrwxrwxrwx 1 root root 0 Sep 17 21:57 \e[01;34m2019-09-17\e[0m\r\n\e]0;user@G2G: /tank2/.zfs/snapshot\a\e[01;32muser@G2G\e[00m:\e[01;34m/tank2/.zfs/snapshot\e[00m$ "
+  - delay: 1579
+    content: c
+  - delay: 84
+    content: d
+  - delay: 89
+    content: ' '
+  - delay: 195
+    content: 2019-09-17/
+  - delay: 837
+    content: "\r\n"
+  - delay: 16
+    content: "\e]0;user@G2G: /tank2/.zfs/snapshot/2019-09-17\a\e[01;32muser@G2G\e[00m:\e[01;34m/tank2/.zfs/snapshot/2019-09-17\e[00m$ "
+  - delay: 433
+    content: l
+  - delay: 161
+    content: l
+  - delay: 160
+    content: "\r\ntotal 204734\r\ndrwxr-xr-x 2 root root         5 Sep 17 21:52 \e[0m\e[01;34m.\e[0m\r\ndrwxrwxrwx 2 root root         2 Sep 17 21:57 \e[34;42m..\e[0m\r\n-rw-r--r-- 1 root root 104857600 Sep 17 21:25 \e[01;31m100MB2.zip\e[0m\r\n-rw-r--r-- 1 root root 104857600 Sep 15 22:31 \e[01;31m100MB.zip\e[0m\r\n-rw-r--r-- 1 root root        12 Sep 17 21:52 hello\r\n\e]0;user@G2G: /tank2/.zfs/snapshot/2019-09-17\a\e[01;32muser@G2G\e[00m:\e[01;34m/tank2/.zfs/snapshot/2019-09-17\e[00m$ "
+  - delay: 10000
+    content: e
+  - delay: 215
+    content: c
+  - delay: 140
+    content: h
+  - delay: 111
+    content: o
+  - delay: 76
+    content: ' '
+  - delay: 200
+    content: ''''
+  - delay: 852
+    content: f
+  - delay: 109
+    content: o
+  - delay: 126
+    content: o
+  - delay: 90
+    content: ''''
+  - delay: 199
+    content: ' '
+  - delay: 545
+    content: '|'
+  - delay: 352
+    content: ' '
+  - delay: 1146
+    content: s
+  - delay: 305
+    content: u
+  - delay: 76
+    content: d
+  - delay: 133
+    content: o
+  - delay: 118
+    content: ' '
+  - delay: 218
+    content: t
+  - delay: 168
+    content: e
+  - delay: 175
+    content: e
+  - delay: 90
+    content: ' '
+  - delay: 304
+    content: '-'
+  - delay: 192
+    content: a
+  - delay: 509
+    content: ' '
+  - delay: 659
+    content: h
+  - delay: 45
+    content: e
+  - delay: 106
+    content: 'llo '
+  - delay: 617
+    content: "\r\n"
+  - delay: 6
+    content: "tee: hello: Read-only file system\r\nfoo\r\n\e]0;user@G2G: /tank2/.zfs/snapshot/2019-09-17\a\e[01;32muser@G2G\e[00m:\e[01;34m/tank2/.zfs/snapshot/2019-09-17\e[00m$ "
+  - delay: 2741
+    content: c
+  - delay: 96
+    content: d
+  - delay: 798
+    content: ' '
+  - delay: 291
+    content: /
+  - delay: 162
+    content: t
+  - delay: 79
+    content: a
+  - delay: 153
+    content: nk2/
+  - delay: 308
+    content: "\r\n\e]0;user@G2G: /tank2\a\e[01;32muser@G2G\e[00m:\e[01;34m/tank2\e[00m$ "
+  - delay: 861
+    content: s
+  - delay: 82
+    content: u
+  - delay: 115
+    content: d
+  - delay: 101
+    content: o
+  - delay: 287
+    content: ' '
+  - delay: 144
+    content: r
+  - delay: 131
+    content: m
+  - delay: 113
+    content: ' '
+  - delay: 591
+    content: '*'
+  - delay: 742
+    content: "\r\n"
+  - delay: 21
+    content: "\e]0;user@G2G: /tank2\a\e[01;32muser@G2G\e[00m:\e[01;34m/tank2\e[00m$ "
+  - delay: 877
+    content: l
+  - delay: 184
+    content: l
+  - delay: 1192
+    content: "\r\ntotal 5\r\ndrwxr-xr-x  2 root root    2 Sep 17 21:57 \e[0m\e[01;34m.\e[0m\r\ndrwxr-xr-x 23 root root 4096 Sep 17 21:36 \e[01;34m..\e[0m\r\n\e]0;user@G2G: /tank2\a\e[01;32muser@G2G\e[00m:\e[01;34m/tank2\e[00m$ "
+  - delay: 2948
+    content: s
+  - delay: 146
+    content: u
+  - delay: 56
+    content: d
+  - delay: 299
+    content: o
+  - delay: 1103
+    content: ' '
+  - delay: 875
+    content: z
+  - delay: 185
+    content: f
+  - delay: 89
+    content: s
+  - delay: 98
+    content: ' '
+  - delay: 768
+    content: r
+  - delay: 133
+    content: o
+  - delay: 503
+    content: l
+  - delay: 171
+    content: l
+  - delay: 289
+    content: b
+  - delay: 127
+    content: a
+  - delay: 498
+    content: c
+  - delay: 111
+    content: k
+  - delay: 133
+    content: ' '
+  - delay: 425
+    content: t
+  - delay: 412
+    content: a
+  - delay: 203
+    content: 'nk2@ '
+  - delay: 538
+    content: "\b\e[K"
+  - delay: 140
+    content: '2019-09-17 '
+  - delay: 1387
+    content: "\r\n"
+  - delay: 44
+    content: "\e]0;user@G2G: /tank2\a\e[01;32muser@G2G\e[00m:\e[01;34m/tank2\e[00m$ "
+  - delay: 809
+    content: l
+  - delay: 144
+    content: l
+  - delay: 99
+    content: "\r\ntotal 204738\r\ndrwxr-xr-x  2 root root         5 Sep 17 21:52 \e[0m\e[01;34m.\e[0m\r\ndrwxr-xr-x 23 root root      4096 Sep 17 21:36 \e[01;34m..\e[0m\r\n-rw-r--r--  1 root root 104857600 Sep 17 21:25 \e[01;31m100MB2.zip\e[0m\r\n-rw-r--r--  1 root root 104857600 Sep 15 22:31 \e[01;31m100MB.zip\e[0m\r\n-rw-r--r--  1 root root        12 Sep 17 21:52 hello\r\n\e]0;user@G2G: /tank2\a\e[01;32muser@G2G\e[00m:\e[01;34m/tank2\e[00m$ "
+  - delay: 3788
+    content: "logout\r\n"

@@ -1,0 +1,287 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /home/user
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 105
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 27
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: -1
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Raid 1
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 394
+    content: "\e]0;user@G2G: ~\a\e[01;32muser@G2G\e[00m:\e[01;34m~\e[00m$ "
+  - delay: 625
+    content: s
+  - delay: 69
+    content: u
+  - delay: 123
+    content: d
+  - delay: 93
+    content: o
+  - delay: 83
+    content: ' '
+  - delay: 405
+    content: z
+  - delay: 87
+    content: p
+  - delay: 82
+    content: o
+  - delay: 153
+    content: o
+  - delay: 201
+    content: l
+  - delay: 67
+    content: ' '
+  - delay: 187
+    content: c
+  - delay: 205
+    content: r
+  - delay: 59
+    content: e
+  - delay: 189
+    content: a
+  - delay: 152
+    content: t
+  - delay: 76
+    content: e
+  - delay: 159
+    content: ' '
+  - delay: 849
+    content: '-'
+  - delay: 397
+    content: f
+  - delay: 97
+    content: ' '
+  - delay: 206
+    content: t
+  - delay: 183
+    content: a
+  - delay: 134
+    content: 'n'
+  - delay: 70
+    content: k
+  - delay: 239
+    content: '1'
+  - delay: 278
+    content: ' '
+  - delay: 234
+    content: m
+  - delay: 210
+    content: i
+  - delay: 164
+    content: r
+  - delay: 177
+    content: r
+  - delay: 244
+    content: o
+  - delay: 85
+    content: r
+  - delay: 288
+    content: ' '
+  - delay: 271
+    content: s
+  - delay: 251
+    content: d
+  - delay: 1131
+    content: b
+  - delay: 115
+    content: ' '
+  - delay: 202
+    content: s
+  - delay: 229
+    content: d
+  - delay: 234
+    content: c
+  - delay: 2799
+    content: "\r\n"
+  - delay: 384
+    content: "\e]0;user@G2G: ~\a\e[01;32muser@G2G\e[00m:\e[01;34m~\e[00m$ "
+  - delay: 1727
+    content: s
+  - delay: 86
+    content: u
+  - delay: 124
+    content: d
+  - delay: 114
+    content: o
+  - delay: 150
+    content: ' '
+  - delay: 358
+    content: z
+  - delay: 150
+    content: p
+  - delay: 62
+    content: o
+  - delay: 154
+    content: o
+  - delay: 197
+    content: l
+  - delay: 90
+    content: ' '
+  - delay: 191
+    content: s
+  - delay: 228
+    content: t
+  - delay: 494
+    content: a
+  - delay: 176
+    content: t
+  - delay: 151
+    content: u
+  - delay: 131
+    content: s
+  - delay: 194
+    content: "\r\n"
+  - delay: 11
+    content: "  pool: tank1\r\n state: ONLINE\r\n  scan: none requested\r\nconfig:\r\n\r\n\tNAME        STATE     READ WRITE CKSUM\r\n\ttank1       ONLINE       0     0     0\r\n\t  mirror-0  ONLINE       0     0     0\r\n\t    sdb     ONLINE       0     0     0\r\n\t    sdc     ONLINE       0     0     0\r\n\r\nerrors: No known data errors\r\n\e]0;user@G2G: ~\a\e[01;32muser@G2G\e[00m:\e[01;34m~\e[00m$ "
+  - delay: 2471
+    content: s
+  - delay: 170
+    content: u
+  - delay: 126
+    content: d
+  - delay: 155
+    content: o
+  - delay: 94
+    content: ' '
+  - delay: 206
+    content: z
+  - delay: 224
+    content: f
+  - delay: 108
+    content: s
+  - delay: 90
+    content: ' '
+  - delay: 188
+    content: l
+  - delay: 105
+    content: i
+  - delay: 50
+    content: s
+  - delay: 230
+    content: t
+  - delay: 131
+    content: "\r\n"
+  - delay: 12
+    content: "NAME    USED  AVAIL  REFER  MOUNTPOINT\r\ntank1    84K  9.63G    24K  /tank1\r\n\e]0;user@G2G: ~\a\e[01;32muser@G2G\e[00m:\e[01;34m~\e[00m$ "
+  - delay: 2277
+    content: l
+  - delay: 161
+    content: l
+  - delay: 391
+    content: ' '
+  - delay: 294
+    content: /
+  - delay: 221
+    content: t
+  - delay: 168
+    content: a
+  - delay: 181
+    content: nk1/
+  - delay: 1981
+    content: "\r\ntotal 5\r\ndrwxr-xr-x  2 root root    2 Sep 15 21:25 \e[0m\e[01;34m.\e[0m\r\ndrwxr-xr-x 23 root root 4096 Sep 15 21:25 \e[01;34m..\e[0m\r\n\e]0;user@G2G: ~\a\e[01;32muser@G2G\e[00m:\e[01;34m~\e[00m$ "
+  - delay: 4453
+    content: "logout\r\n"
