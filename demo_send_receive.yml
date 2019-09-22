@@ -1,0 +1,401 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /home/user
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 105
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 27
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: -1
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 20000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Zpool send / receive
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 433
+    content: "\e]0;user@G2G: ~\a\e[01;32muser@G2G\e[00m:\e[01;34m~\e[00m$ "
+  - delay: 1011
+    content: z
+  - delay: 72
+    content: p
+  - delay: 192
+    content: o
+  - delay: 120
+    content: o
+  - delay: 160
+    content: l
+  - delay: 96
+    content: ' '
+  - delay: 47
+    content: s
+  - delay: 201
+    content: t
+  - delay: 144
+    content: a
+  - delay: 156
+    content: t
+  - delay: 96
+    content: u
+  - delay: 128
+    content: s
+  - delay: 416
+    content: "\r\n"
+  - delay: 12
+    content: "  pool: backup\r\n state: ONLINE\r\n  scan: none requested\r\nconfig:\r\n\r\n\tNAME        STATE     READ WRITE CKSUM\r\n\tbackup      ONLINE       0     0     0\r\n\t  sdf       ONLINE       0     0     0\r\n\r\nerrors: No known data errors\r\n\r\n  pool: production\r\n state: ONLINE\r\n  scan: none requested\r\nconfig:\r\n\r\n\tNAME        STATE     READ WRITE CKSUM\r\n\tproduction  ONLINE       0     0     0\r\n\t  mirror-0  ONLINE       0     0     0\r\n\t    sdd     ONLINE       0     0     0\r\n\t    sdh     ONLINE       0     0     0\r\n\r\nerrors: No known data errors\r\n\e]0;user@G2G: ~\a\e[01;32muser@G2G\e[00m:\e[01;34m~\e[00m$ "
+  - delay: 5000
+    content: z
+  - delay: 176
+    content: f
+  - delay: 120
+    content: s
+  - delay: 136
+    content: ' '
+  - delay: 576
+    content: l
+  - delay: 247
+    content: i
+  - delay: 153
+    content: s
+  - delay: 228
+    content: t
+  - delay: 824
+    content: "\r\n"
+  - delay: 8
+    content: "NAME                        USED  AVAIL  REFER  MOUNTPOINT\r\nbackup                       93K  9.63G    24K  /backup\r\nproduction                 1.00G  8.63G    25K  /production\r\nproduction/importantStuff  1.00G  8.63G  1.00G  /production/importantStuff\r\n\e]0;user@G2G: ~\a\e[01;32muser@G2G\e[00m:\e[01;34m~\e[00m$ "
+  - delay: 5000
+    content: z
+  - delay: 168
+    content: f
+  - delay: 96
+    content: s
+  - delay: 132
+    content: ' '
+  - delay: 188
+    content: s
+  - delay: 167
+    content: 'n'
+  - delay: 116
+    content: a
+  - delay: 224
+    content: p
+  - delay: 256
+    content: s
+  - delay: 176
+    content: h
+  - delay: 228
+    content: o
+  - delay: 115
+    content: t
+  - delay: 165
+    content: ' '
+  - delay: 1766
+    content: production/importantStuff
+  - delay: 934
+    content: '@'
+  - delay: 328
+    content: 'n'
+  - delay: 215
+    content: o
+  - delay: 96
+    content: w
+  - delay: 712
+    content: "\r\n"
+  - delay: 29
+    content: "\e]0;user@G2G: ~\a\e[01;32muser@G2G\e[00m:\e[01;34m~\e[00m$ "
+  - delay: 1555
+    content: z
+  - delay: 136
+    content: f
+  - delay: 104
+    content: s
+  - delay: 72
+    content: ' '
+  - delay: 96
+    content: l
+  - delay: 168
+    content: i
+  - delay: 40
+    content: s
+  - delay: 104
+    content: t
+  - delay: 617
+    content: "\r\n"
+  - delay: 17
+    content: "NAME                            USED  AVAIL  REFER  MOUNTPOINT\r\nbackup                           93K  9.63G    24K  /backup\r\nproduction                     1.00G  8.63G    25K  /production\r\nproduction/importantStuff      1.00G  8.63G  1.00G  /production/importantStuff\r\nproduction/importantStuff@now     0B      -  1.00G  -\r\n\e]0;user@G2G: ~\a\e[01;32muser@G2G\e[00m:\e[01;34m~\e[00m$ "
+  - delay: 5000
+    content: z
+  - delay: 184
+    content: f
+  - delay: 88
+    content: s
+  - delay: 120
+    content: ' '
+  - delay: 136
+    content: s
+  - delay: 152
+    content: e
+  - delay: 152
+    content: 'n'
+  - delay: 128
+    content: d
+  - delay: 136
+    content: ' '
+  - delay: 248
+    content: '-'
+  - delay: 560
+    content: v
+  - delay: 180
+    content: ' '
+  - delay: 2426
+    content: production/importantStuff@now
+  - delay: 382
+    content: ' '
+  - delay: 524
+    content: '|'
+  - delay: 5000
+    content: ' '
+  - delay: 304
+    content: s
+  - delay: 184
+    content: s
+  - delay: 248
+    content: h
+  - delay: 312
+    content: ' '
+  - delay: 1272
+    content: u
+  - delay: 84
+    content: s
+  - delay: 172
+    content: e
+  - delay: 176
+    content: r
+  - delay: 275
+    content: '@'
+  - delay: 673
+    content: l
+  - delay: 184
+    content: o
+  - delay: 112
+    content: c
+  - delay: 176
+    content: a
+  - delay: 168
+    content: l
+  - delay: 248
+    content: h
+  - delay: 216
+    content: o
+  - delay: 120
+    content: s
+  - delay: 232
+    content: t
+  - delay: 616
+    content: ' '
+  - delay: 512
+    content: '-'
+  - delay: 144
+    content: '-'
+  - delay: 5000
+    content: ' '
+  - delay: 736
+    content: '"'
+  - delay: 320
+    content: s
+  - delay: 256
+    content: u
+  - delay: 121
+    content: d
+  - delay: 190
+    content: o
+  - delay: 160
+    content: ' '
+  - delay: 272
+    content: z
+  - delay: 224
+    content: f
+  - delay: 128
+    content: s
+  - delay: 136
+    content: ' '
+  - delay: 336
+    content: r
+  - delay: 152
+    content: e
+  - delay: 112
+    content: c
+  - delay: 120
+    content: e
+  - delay: 911
+    content: i
+  - delay: 104
+    content: v
+  - delay: 160
+    content: e
+  - delay: 628
+    content: ' '
+  - delay: 344
+    content: '-'
+  - delay: 504
+    content: v
+  - delay: 192
+    content: ' '
+  - delay: 724
+    content: b
+  - delay: 172
+    content: a
+  - delay: 172
+    content: c
+  - delay: 80
+    content: k
+  - delay: 201
+    content: u
+  - delay: 268
+    content: "p \r"
+  - delay: 3656
+    content: /importantStuff
+  - delay: 3592
+    content: '"'
+  - delay: 144
+    content: "\r\n"
+  - delay: 9
+    content: "full send of production/importantStuff@now estimated size is 1.00G\r\ntotal estimated size is 1.00G\r\nTIME        SENT   SNAPSHOT\r\n"
+  - delay: 254
+    content: "receiving full stream of production/importantStuff@now into backup/importantStuff@now\r\n"
+  - delay: 746
+    content: "08:40:18    183M   production/importantStuff@now\r\n"
+  - delay: 1000
+    content: "08:40:19    443M   production/importantStuff@now\r\n"
+  - delay: 1001
+    content: "08:40:20    486M   production/importantStuff@now\r\n"
+  - delay: 1000
+    content: "08:40:21    721M   production/importantStuff@now\r\n"
+  - delay: 1000
+    content: "08:40:22    833M   production/importantStuff@now\r\n"
+  - delay: 1001
+    content: "08:40:23    876M   production/importantStuff@now\r\n"
+  - delay: 1000
+    content: "08:40:24    973M   production/importantStuff@now\r\n"
+  - delay: 2104
+    content: "received 1.00G stream in 9 seconds (114M/sec)\r\n\e]0;user@G2G: ~\a\e[01;32muser@G2G\e[00m:\e[01;34m~\e[00m$ "
+  - delay: 1482
+    content: z
+  - delay: 167
+    content: f
+  - delay: 112
+    content: s
+  - delay: 113
+    content: ' '
+  - delay: 183
+    content: l
+  - delay: 192
+    content: i
+  - delay: 49
+    content: s
+  - delay: 160
+    content: t
+  - delay: 1448
+    content: "\r\n"
+  - delay: 11
+    content: "NAME                            USED  AVAIL  REFER  MOUNTPOINT\r\nbackup                         1.00G  8.63G    25K  /backup\r\nbackup/importantStuff          1.00G  8.63G  1.00G  /backup/importantStuff\r\nbackup/importantStuff@now         0B      -  1.00G  -\r\nproduction                     1.00G  8.63G    25K  /production\r\nproduction/importantStuff      1.00G  8.63G  1.00G  /production/importantStuff\r\nproduction/importantStuff@now     0B      -  1.00G  -\r\n\e]0;user@G2G: ~\a\e[01;32muser@G2G\e[00m:\e[01;34m~\e[00m$ "
+  - delay: 3389
+    content: "logout\r\n"

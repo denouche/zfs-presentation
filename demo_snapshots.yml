@@ -198,10 +198,8 @@ records:
   - delay: 146
     content: 'n'
   - delay: 195
-    content: 'k2@ '
-  - delay: 350
-    content: "\b\e[K"
-  - delay: 1172
+    content: 'k2@'
+  - delay: 3000
     content: $
   - delay: 662
     content: (
@@ -271,13 +269,13 @@ records:
     content: "\r\n"
   - delay: 14
     content: "NAME               USED  AVAIL  REFER  MOUNTPOINT\r\ntank2              202M  19.0G   200M  /tank2\r\ntank2@2019-09-17     0B      -   200M  -\r\n\e]0;user@G2G: /tank2\a\e[01;32muser@G2G\e[00m:\e[01;34m/tank2\e[00m$ "
-  - delay: 3004
+  - delay: 6000
     content: l
   - delay: 160
     content: l
   - delay: 375
     content: "\r\ntotal 204738\r\ndrwxr-xr-x  2 root root         5 Sep 17 21:52 \e[0m\e[01;34m.\e[0m\r\ndrwxr-xr-x 23 root root      4096 Sep 17 21:36 \e[01;34m..\e[0m\r\n-rw-r--r--  1 root root 104857600 Sep 17 21:25 \e[01;31m100MB2.zip\e[0m\r\n-rw-r--r--  1 root root 104857600 Sep 15 22:31 \e[01;31m100MB.zip\e[0m\r\n-rw-r--r--  1 root root        12 Sep 17 21:52 hello\r\n\e]0;user@G2G: /tank2\a\e[01;32muser@G2G\e[00m:\e[01;34m/tank2\e[00m$ "
-  - delay: 1491
+  - delay: 3000
     content: c
   - delay: 85
     content: d
@@ -307,13 +305,13 @@ records:
     content: pshot/
   - delay: 892
     content: "\r\n\e]0;user@G2G: /tank2/.zfs/snapshot\a\e[01;32muser@G2G\e[00m:\e[01;34m/tank2/.zfs/snapshot\e[00m$ "
-  - delay: 566
+  - delay: 2000
     content: l
   - delay: 196
     content: l
   - delay: 198
     content: "\r\ntotal 0\r\ndrwxrwxrwx 2 root root 2 Sep 17 21:57 \e[0m\e[34;42m.\e[0m\r\ndrwxrwxrwx 1 root root 0 Sep 17 21:36 \e[34;42m..\e[0m\r\ndrwxrwxrwx 1 root root 0 Sep 17 21:57 \e[01;34m2019-09-17\e[0m\r\n\e]0;user@G2G: /tank2/.zfs/snapshot\a\e[01;32muser@G2G\e[00m:\e[01;34m/tank2/.zfs/snapshot\e[00m$ "
-  - delay: 1579
+  - delay: 4000
     content: c
   - delay: 84
     content: d
@@ -391,7 +389,7 @@ records:
     content: "\r\n"
   - delay: 6
     content: "tee: hello: Read-only file system\r\nfoo\r\n\e]0;user@G2G: /tank2/.zfs/snapshot/2019-09-17\a\e[01;32muser@G2G\e[00m:\e[01;34m/tank2/.zfs/snapshot/2019-09-17\e[00m$ "
-  - delay: 2741
+  - delay: 4000
     content: c
   - delay: 96
     content: d

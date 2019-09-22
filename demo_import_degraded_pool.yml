@@ -42,7 +42,7 @@ config:
   # Maximum delay between frames in ms
   # Ignored if the `frameDelay` isn't set to `auto`
   # Set to `auto` to prevent limiting the max idle time
-  maxIdleTime: 2000
+  maxIdleTime: 20000
   
   # The surrounding frame box
   # The `type` can be null, window, floating, or solid`
@@ -189,7 +189,7 @@ records:
     content: "\r\n"
   - delay: 1401
     content: "   pool: tank2\r\n     id: 145876854711583596\r\n  state: DEGRADED\r\n status: One or more devices contains corrupted data.\r\n action: The pool can be imported despite missing or damaged devices.  The\r\n\tfault tolerance of the pool may be compromised if imported.\r\n   see: http://zfsonlinux.org/msg/ZFS-8000-4J\r\n config:\r\n\r\n\ttank2       DEGRADED\r\n\t  raidz1-0  DEGRADED\r\n\t    sdd     ONLINE\r\n\t    sdg     UNAVAIL\r\n\t    sdf     ONLINE\r\n\e]0;user@G2G: ~\a\e[01;32muser@G2G\e[00m:\e[01;34m~\e[00m$ "
-  - delay: 3199
+  - delay: 6000
     content: s
   - delay: 136
     content: u

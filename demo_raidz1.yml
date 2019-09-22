@@ -42,7 +42,7 @@ config:
   # Maximum delay between frames in ms
   # Ignored if the `frameDelay` isn't set to `auto`
   # Set to `auto` to prevent limiting the max idle time
-  maxIdleTime: 2000
+  maxIdleTime: 20000
   
   # The surrounding frame box
   # The `type` can be null, window, floating, or solid`
@@ -247,7 +247,7 @@ records:
     content: "\r\n"
   - delay: 13
     content: "  pool: tank1\r\n state: ONLINE\r\n  scan: none requested\r\nconfig:\r\n\r\n\tNAME        STATE     READ WRITE CKSUM\r\n\ttank1       ONLINE       0     0     0\r\n\t  mirror-0  ONLINE       0     0     0\r\n\t    sdb     ONLINE       0     0     0\r\n\t    sdc     ONLINE       0     0     0\r\n\r\nerrors: No known data errors\r\n\r\n  pool: tank2\r\n state: ONLINE\r\n  scan: none requested\r\nconfig:\r\n\r\n\tNAME        STATE     READ WRITE CKSUM\r\n\ttank2       ONLINE       0     0     0\r\n\t  raidz1-0  ONLINE       0     0     0\r\n\t    sdd     ONLINE       0     0     0\r\n\t    sde     ONLINE       0     0     0\r\n\t    sdf     ONLINE       0     0     0\r\n\r\nerrors: No known data errors\r\n\e]0;user@G2G: ~\a\e[01;32muser@G2G\e[00m:\e[01;34m~\e[00m$ "
-  - delay: 5989
+  - delay: 3989
     content: s
   - delay: 89
     content: u
@@ -277,7 +277,7 @@ records:
     content: "\r\n"
   - delay: 15
     content: "NAME    USED  AVAIL  REFER  MOUNTPOINT\r\ntank1    84K  9.63G    24K  /tank1\r\ntank2   103K  19.2G  30.6K  /tank2\r\n\e]0;user@G2G: ~\a\e[01;32muser@G2G\e[00m:\e[01;34m~\e[00m$ "
-  - delay: 4025
+  - delay: 3025
     content: l
   - delay: 130
     content: l

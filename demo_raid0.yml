@@ -42,7 +42,7 @@ config:
   # Maximum delay between frames in ms
   # Ignored if the `frameDelay` isn't set to `auto`
   # Set to `auto` to prevent limiting the max idle time
-  maxIdleTime: 2000
+  maxIdleTime: 20000
   
   # The surrounding frame box
   # The `type` can be null, window, floating, or solid`
@@ -113,7 +113,7 @@ config:
 records:
   - delay: 418
     content: "\e]0;user@G2G: ~\a\e[01;32muser@G2G\e[00m:\e[01;34m~\e[00m$ "
-  - delay: 1272
+  - delay: 2000
     content: s
   - delay: 119
     content: u
